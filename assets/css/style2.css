@@ -1,0 +1,1705 @@
+.topbar .topbar-container {
+  position: relative;
+}
+.topbar .topbar-container .km-logo-wrapper {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  left: 50%;
+  z-index: 3;
+}
+.topbar .topbar-container .km-logo-wrapper .km-logo {
+  position: relative;
+}
+.topbar .topbar-container .km-logo-wrapper .km-logo .new-logo {
+  width: 240px;
+  position: absolute;
+  top: -50px;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: width 0.2s ease;
+  -webkit-animation: logo 0.9s ease;
+          animation: logo 0.9s ease;
+}
+@-webkit-keyframes logo {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+  }
+}
+@keyframes logo {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -50px;
+  }
+}
+.topbar .topbar-container .bal-container .before-login .mobile {
+  display: none;
+}
+.topbar .topbar-container .bal-container .user-container {
+  display: none;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  padding: 10px 15px;
+  margin: 0 0.5rem;
+  height: 42px;
+  background-color: #98116d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  align-items: center;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar .avatar {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar .avatar i {
+  color: #fff;
+  margin-right: 4px;
+  font-size: 20px;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar .avatar .nickname {
+  font-size: 12px;
+  white-space: nowrap;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar .avatar .nickname span {
+  display: block;
+  max-width: 86px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 6px);
+  height: calc(100% - 4px);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar:hover {
+  background-color: #760d55;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar:hover::before {
+  transition: 0.2s ease;
+}
+.topbar .topbar-container .bal-container .user-container .user-avatar:active {
+  transition: 0.2s ease;
+  transform: scale(0.95);
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+  margin: 0 0.235rem;
+  color: #000;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .balance {
+  display: flex;
+  align-items: center;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .balance i {
+  color: #000;
+  margin-right: 4px;
+  font-size: 14px;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .balance span#user-balance {
+  display: block;
+  max-width: 90px;
+  margin: 0 0.235rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .balance span:nth-child(3) {
+  margin-left: auto;
+  color: #98116d;
+  font-weight: 400;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .point {
+  display: flex;
+  align-items: center;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .point svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .point span#user-point {
+  display: block;
+  max-width: 90px;
+  margin: 0 0.235rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.topbar .topbar-container .bal-container .user-container .balance-wrapper .point span:nth-child(3) {
+  margin-left: auto;
+  color: #98116d;
+  font-weight: 400;
+}
+.topbar .topbar-container .bal-container .user-container .action {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  transition: 0.2s ease;
+}
+.topbar .topbar-container .bal-container .user-container .action.message i {
+  font-size: 18px;
+  color: var(--white-yellow);
+}
+.topbar .topbar-container .bal-container .user-container .action.message span {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: -3px;
+  left: 50%;
+  background-color: var(--danger);
+  padding: 4px 8px;
+  border-radius: 27px;
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  height: 22px;
+  line-height: 1.1;
+}
+.topbar .topbar-container .bal-container .user-container .action.logout i {
+  font-size: 18px;
+  color: var(--white-yellow);
+}
+.topbar .topbar-container .bal-container .user-container .action:hover {
+  filter: brightness(1.1);
+  text-shadow: 0 1px 0 rgb(0, 0, 0), 0 0 8px rgba(255, 255, 255, 0.5);
+}
+.topbar .topbar-container .bal-container .user-container .action:active {
+  transform: scale(0.9);
+}
+.topbar .topbar-container .bal-container .user-container .mobile {
+  display: none;
+}
+.topbar .topbar-container .bal-container.logged .user-container {
+  display: flex;
+}
+.topbar .topbar-container .bal-container.logged .before-login {
+  display: none;
+}
+.topbar .topbar-container .menu-toggle {
+  display: none;
+  color: var(--white-yellow);
+}
+
+.wrapper main.page-content section.toggle-section .page-header .bg {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 400px;
+  height: 134px;
+  background-size: 100%;
+  /* background-position: top; */
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5));
+}
+.wrapper main.page-content section.toggle-section .page-header .page-text {
+  position: relative;
+  font-weight: 600;
+  font-size: 50px;
+  margin: 1rem 0 2rem 0;
+}
+.wrapper main.page-content section.toggle-section .page-header .page-text span:first-child {
+  display: block;
+}
+.wrapper main.page-content section.toggle-section .page-header .page-text span:last-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #906b3d;
+}
+.wrapper main.page-content section.board-list {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.board-list .container {
+  width: 40%;
+}
+.wrapper main.page-content section.board-list .container .board-table {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.board-list .container .board-table table {
+  width: 100%;
+}
+.wrapper main.page-content section.board-list .container .board-table table thead tr {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+.wrapper main.page-content section.board-list .container .board-table table thead tr th {
+  padding: 0.5rem 0;
+  color: #000;
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr:not(:last-child) {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr td {
+  padding: 1rem 0.325rem;
+  color: #000;
+  font-weight: 100;
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr td img.logo-sm {
+  width: 125px;
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr td.item {
+  color: #760d55;
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr td.title a {
+  color: #000;
+  font-weight: 100;
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr td.title a:hover {
+  color: rgba(0, 0, 0, 0.782);
+}
+.wrapper main.page-content section.board-list .container .board-table table tbody tr td.date {
+  color: #98116d;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .header .back a {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .header .back a span {
+  color: #000;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .header .title {
+  text-align: center;
+  font-size: 20px;
+  color: #98116d;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .header .date {
+  text-align: right;
+}
+.wrapper main.page-content section.board-list .container .board-table .board-content .content {
+  min-height: 170px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: justify;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper main.page-content section.history {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.history .container {
+  width: 60%;
+}
+.wrapper main.page-content section.history .container .history-table {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.history .container .history-table .header .back a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.wrapper main.page-content section.history .container .history-table .header .back a span {
+  margin-left: 4px;
+  color: #000;
+}
+.wrapper main.page-content section.history .container .history-table .header .btn-secondary {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #98116d;
+}
+.wrapper main.page-content section.history .container .history-table .header .btn-secondary.active {
+  color: #fff;
+  background-color: #98116d;
+  border: 1px solid #98116d;
+}
+.wrapper main.page-content section.history .container .history-table table {
+  width: 100%;
+}
+.wrapper main.page-content section.history .container .history-table table thead tr {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+.wrapper main.page-content section.history .container .history-table table thead tr th {
+  padding: 0.5rem 0;
+  color: #000;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr:not(:last-child) {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr td {
+  padding: 1rem 0.325rem;
+  color: #000;
+  font-weight: 100;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr td img.logo-sm {
+  width: 125px;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr td.item {
+  color: #98116d;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr td.title a {
+  color: #fff;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr td.title a:hover {
+  color: #000;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr td.date {
+  color: #760d55;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr.processing td.status {
+  color: #ffc107;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr.cancel td.status {
+  color: #ff3a4d;
+}
+.wrapper main.page-content section.history .container .history-table table tbody tr.complete td.status {
+  color: #39c359;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .header .back a {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .header .title {
+  text-align: center;
+  font-size: 20px;
+  color: #ffc107;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .header .date {
+  text-align: right;
+}
+.wrapper main.page-content section.history .container .history-table .board-content .content {
+  min-height: 170px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: justify;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper main.page-content section.inquiry-list {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.inquiry-list .container {
+  width: 40%;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table {
+  width: 100%;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table thead tr {
+  border-bottom: solid 1px rgba(24, 24, 24, 0.1);
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table thead tr th {
+  padding: 0.5rem 0;
+  color: #000;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr:not(:last-child) {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td {
+  padding: 1rem 0.325rem;
+  color: #000;
+  font-weight: 100;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td img.logo-sm {
+  width: 125px;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td.item {
+  color: #000;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td.title {
+  text-align: left;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td.title a {
+  color: #000;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td.title a:hover {
+  color: #000;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td.date {
+  text-align: right;
+  color: #000;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .back a {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .back a span {
+  color: #000;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .title {
+  text-align: center;
+  font-size: 20px;
+  color: #98116d;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .date {
+  text-align: right;
+}
+.wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .content {
+  min-height: 170px;
+  max-height: 300px;
+  overflow: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: justify;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+.wrapper main.page-content section.transaction {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.transaction .container {
+  width: 40%;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .back {
+  display: none;
+  align-items: center;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .back a {
+  display: flex;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .title {
+  text-align: center;
+  font-size: 20px;
+  color: #ffc107;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .date {
+  text-align: right;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .custom-select:focus,
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content input[type=text]:focus,
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content input[type=password]:focus {
+  border-color: rgb(152, 17, 109);
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.23);
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .form-group {
+  position: relative;
+  text-align: left;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .form-group i {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  color: #6a3900;
+  font-size: 14px;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money {
+  gap: 6px;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money button {
+  width: 100%;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money button.btn-secondary {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #98116d;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money button.btn-secondary:hover {
+  background-color: #98116d;
+  color: white;
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money button.btn-secondary.focus, .wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money button.btn-secondary:focus {
+  color: #fff;
+  border-color: var(--orange);
+  box-shadow: 0 0 1rem rgba(255, 193, 7, 0.25);
+}
+.wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money button.btn-danger {
+  color: #fff;
+  background-color: #98116d;
+  border-color: #98116d;
+}
+.wrapper main.page-content section.register {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.register .container .register-wrapper {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header .back {
+  display: none;
+  align-items: center;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header .back a {
+  display: flex;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header .title {
+  text-align: center;
+  font-size: 20px;
+  color: #ffc107;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .header .date {
+  text-align: right;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .custom-select:focus,
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content input[type=text]:focus {
+  border-color: #98116d;
+  box-shadow: 0 0 0 0.2rem rgba(160, 55, 126, 0.61);
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-group {
+  position: relative;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-group i {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  color: #6a3900;
+  font-size: 14px;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .quick-money {
+  gap: 6px;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .quick-money button {
+  width: 100%;
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .quick-money button.btn-secondary {
+  color: var(--orange);
+  background-color: transparent;
+  border: 1px solid var(--orange);
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .quick-money button.btn-secondary:hover {
+  background-color: rgba(108, 69, 0, 0.2509803922);
+}
+.wrapper main.page-content section.register .container .register-wrapper .register-content .content .quick-money button.btn-secondary.focus, .wrapper main.page-content section.register .container .register-wrapper .register-content .content .quick-money button.btn-secondary:focus {
+  color: #fff;
+  border-color: var(--orange);
+  box-shadow: 0 0 1rem rgba(255, 193, 7, 0.25);
+}
+.wrapper main.page-content section.login {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.login .container {
+  width: 40%;
+}
+.wrapper main.page-content section.login .container .login-wrapper {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .header .back {
+  display: none;
+  align-items: center;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .header .back a {
+  display: flex;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .content .custom-select:focus,
+.wrapper main.page-content section.login .container .login-wrapper .login-content .content input[type=text]:focus {
+  border-color: #98116d;
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.515);
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .content .form-group {
+  position: relative;
+}
+.wrapper main.page-content section.login .container .login-wrapper .login-content .content .form-group i {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  color: #6a3900;
+  font-size: 14px;
+}
+.wrapper main.page-content section.customerservice {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.customerservice .container {
+  width: 40%;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .header .telegram {
+  margin: 1rem 0;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .header .telegram a.opentelegram {
+  color: #000;
+  font-size: 17px;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .header .telegram a.opentelegram img.telegram-icon {
+  width: 48px;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content .custom-select:focus,
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content input[type=text]:focus {
+  border-color: #98116d;
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.515);
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content .form-group {
+  position: relative;
+}
+.wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content .form-group i {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  color: #6a3900;
+  font-size: 14px;
+}
+.wrapper main.page-content section.mypage {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.mypage .container {
+  width: 40%;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .header {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .header .back a {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .content .custom-select:focus,
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .content input[type=text]:focus {
+  border-color: #98116d;
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.515);
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .content .form-group {
+  position: relative;
+}
+.wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .content .form-group i {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  color: #6a3900;
+  font-size: 14px;
+}
+.wrapper main.page-content section.changepass {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.changepass .container {
+  width: 40%;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper {
+  position: relative;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .header {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .header .back a {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .content .custom-select:focus,
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .content input[type=text]:focus,
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .content input[type=password]:focus {
+  border-color: #98116d;
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.515);
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .content .form-group {
+  position: relative;
+  text-align: left;
+}
+.wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .content .form-group i {
+  position: absolute;
+  right: 10px;
+  bottom: 11px;
+  color: #6a3900;
+  font-size: 14px;
+}
+.wrapper main.page-content section.slotlist {
+  margin-top: 2rem;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper {
+  position: relative;
+  border-radius: 6px;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .header {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .header .back a {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .header .back a svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .header .back a span {
+  color: #fff;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content {
+  width: 100%;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist {
+  display: grid;
+  gap: 8px;
+  align-items: start;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  padding: 4px;
+  z-index: 1;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 10px;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  transform: translatex(-50%);
+  left: 50%;
+  bottom: -5%;
+  margin: 0 auto;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  z-index: -1;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-thmb {
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 7px;
+  margin: 0 0 0.425rem 0;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-thmb img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition: 0.2s;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title {
+  display: flex;
+  align-items: center;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title span.status {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin: 0 0.325rem 0 0;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title span.status.active {
+  background-color: #00ec10;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title span.status.not-active {
+  background-color: #ec0000;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title span.title {
+  color: #ffeabe;
+  font-size: 11px;
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
+  display: block;
+  max-width: 104px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .play-btn button.btn-play {
+  font-size: 10px !important;
+  padding: 4px 10px !important;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .glass {
+  width: 130%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+  transform-origin: bottom left;
+  transform: rotate(324deg);
+  z-index: 1;
+  transition: 0.3s;
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box:hover {
+  box-shadow: 0 0 10px rgba(234, 209, 163, 0.5);
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box:hover .game-container .game-thmb img {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box:hover .glass {
+  transform: rotate(270deg);
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.388), rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0)); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.231372549);
+  border-top: 1px solid rgba(0, 0, 0, 0.231372549);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 4px;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 4px;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a {
+  color: #060606;
+  display: flex;
+  padding: 1.5rem;
+  font-weight: 100;
+  border-bottom: 3px solid rgba(152, 17, 109, 0);
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a .icon {
+  margin-right: 0.625rem;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a .icon i {
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background-image: linear-gradient(316deg, #f2d267 35%, #fbf7b4 45%, #c08d3e 85%); */
+  background-size: 100% 100%;
+  position: relative;
+  color: #424542;
+  font-size: 18px;
+  /* background: blue; */
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a.active {
+  color: #98116d;
+  border-bottom: 3px solid #98116d;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a.active .icon i {
+  color: #98116d;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a:hover:not(.active) {
+  color: #98116d;
+  border-bottom: 3px solid #98116d;
+}
+.wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a:hover:not(.active) .icon i {
+  color: #98116d;
+}
+.wrapper main.page-content.slotlist section.toggle-section .container .page-header .bg {
+  z-index: -2;
+}
+.wrapper main.page-content.slotlist section.toggle-section .container .page-header .page-text {
+  margin: 1rem 0 0rem 0;
+}
+.wrapper main.page-content.slotlist section.toggle-section .container .page-header .back {
+  z-index: 1;
+}
+.wrapper main.page-content.slotlist section.toggle-section .container .page-header .back a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper main.page-content.slotlist section.toggle-section .container .page-header .back a svg {
+  margin: 0 4px 0 0;
+}
+
+.submit-btn .btn {
+  height: 38px;
+  font-size: 12px;
+  min-width: 104px;
+}
+.submit-btn .btn:focus.focus, .submit-btn .btn:focus:focus {
+  border-color: rgb(152, 17, 109);
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.23);
+}
+.submit-btn .btn:hover {
+  box-shadow: 0 0 7rem inset rgba(0, 0, 0, 0.2392156863);
+}
+.submit-btn .btn-submit {
+  border-color: #98116d;
+  background-color: #98116d;
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.submit-btn .btn-cancel {
+  border: solid 1px #000;
+  color: #000;
+}
+
+.use.btn {
+  font-size: 12px;
+}
+.use.btn:focus.focus, .use.btn:focus:focus {
+  border-color: rgb(152, 17, 109);
+  box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.23);
+}
+.use.btn:hover {
+  box-shadow: 0 0 7rem inset rgba(0, 0, 0, 0.2392156863);
+}
+.use.btn.btn-use {
+  background-color: #98116d;
+  color: #fff;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.use.btn.btn-use.used {
+  cursor: not-allowed;
+  border: solid 1px #614822;
+  background-color: #261e12;
+  color: #815d27;
+}
+
+.topbottom-border {
+  background-color: #fff;
+}
+
+.pagination-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 0 0;
+}
+.pagination-new .prev {
+  display: flex;
+}
+.pagination-new ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template: auto/auto auto auto;
+  margin: 0 2rem;
+}
+.pagination-new ul.pages li.page-number a {
+  display: block;
+  color: #000;
+  padding: 0.5rem 1rem;
+}
+.pagination-new ul.pages li.page-number a span {
+  display: block;
+}
+.pagination-new ul.pages li.page-number:not(:last-child) a {
+  border-right: solid 1px rgba(255, 255, 255, 0.1);
+}
+.pagination-new ul.pages li.page-number.active a {
+  background-color: #98116d;
+  color: #fff;
+}
+.pagination-new ul.pages li.page-number:not(.active):hover a {
+  background-color: #7e7e7e;
+}
+.pagination-new .next {
+  display: flex;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.631372549);
+  width: 100%;
+  height: 100%;
+  z-index: 98;
+  width: 100%;
+  height: 100%;
+}
+
+.sidenav {
+  background: #fff;
+  border-right: solid 1px rgba(0, 0, 0, 0.5529411765);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 101;
+  width: 240px;
+  height: 100%;
+  transition: left 0.4s ease-in-out;
+}
+.sidenav .mobilemenu {
+  list-style: none;
+  padding: 20px;
+}
+.sidenav .mobilemenu li {
+  margin: 0 0 0.5rem 0;
+}
+.sidenav .mobilemenu li .mobilemenu-item {
+  padding: 1rem;
+  color: var(--white-yellow);
+  display: flex;
+  align-items: center;
+}
+.sidenav .mobilemenu li .mobilemenu-item i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.sidenav.active {
+  left: 0;
+}
+
+@media (min-width: 100px) and (max-width: 1280px) {
+  .desktop {
+    display: none !important;
+  }
+  .wrapper {
+    padding: 4rem 0 0 0;
+  }
+  .wrapper .topbar {
+    position: fixed;
+    height: 69px;
+  }
+  .wrapper .topbar .topbar-container .bs-ul.main-menu.sidebar-left {
+    display: none;
+  }
+  .wrapper .topbar .topbar-container .bal-container {
+    display: block;
+    background: #fff;
+    box-shadow: 0px 0px 12px #000;
+    top: 0;
+    right: -100%;
+    border-radius: 4px;
+    position: fixed;
+    width: 260px;
+    padding: 1rem;
+    z-index: 102;
+    height: 100%;
+    transition: right 0.4s ease-in-out;
+  }
+  .wrapper .topbar .topbar-container .bal-container .before-login .mobile {
+    display: none;
+  }
+  .wrapper .topbar .topbar-container .bal-container .before-login.active .mobile {
+    display: block;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container {
+    flex-wrap: wrap;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .user-avatar {
+    order: 1;
+    width: 200px;
+    margin: 0 0.5rem 1rem 0;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper {
+    order: 3;
+    width: 100%;
+    font-size: 16px;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .balance {
+    padding: 0.825rem;
+    border-bottom: 1px solid #645136;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .balance i {
+    font-size: 24px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4784313725);
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .balance span#user-balance {
+    max-width: 120px;
+    margin: 0 0.625rem 0 auto;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .balance span:nth-child(3) {
+    margin: unset;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .point {
+    padding: 0.825rem;
+    border-bottom: 1px solid #760d55;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .point svg {
+    width: 24px;
+    height: 24px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4784313725);
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .point span#user-point {
+    max-width: 120px;
+    margin: 0 0.625rem 0 auto;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .balance-wrapper .point span:nth-child(3) {
+    margin: unset;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .action.message {
+    display: none;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .action.logout {
+    order: 2;
+    width: 18px;
+    padding: 10px 0 10px 2px;
+    margin: -1rem 0 0 0;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile {
+    display: flex;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink {
+    order: 5;
+    margin: 1rem 0;
+    width: 100%;
+    justify-content: center;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink .quicklink-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 0.625rem 1rem;
+    border: solid 1px #760d55;
+    background-color: #760d55;
+    color: #fff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink .quicklink-item:hover {
+    box-shadow: 0 0 7rem inset #760d55;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink .quicklink-item:focus {
+    border-color: rgb(152, 17, 109);
+    box-shadow: 0 0 0 0.2rem rgba(152, 17, 109, 0.23);
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink .quicklink-item i {
+    color: var(--white-yellow);
+    font-size: 16px;
+    margin: 0 0.325rem 0 0;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink .quicklink-item .quicklink-title {
+    position: relative;
+    display: block;
+  }
+  .wrapper .topbar .topbar-container .bal-container .user-container .mobile.quicklink .quicklink-item .badge {
+    position: absolute;
+    left: 104%;
+    transform: translateX(-104%);
+    top: -6px;
+    padding: 4px 6px;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+  }
+  .wrapper .topbar .topbar-container .bal-container .mobile .dflex-ac-jc {
+    flex-direction: column;
+  }
+  .wrapper .topbar .topbar-container .bal-container .mobile .dflex-ac-jc button {
+    width: 100%;
+  }
+  .wrapper .topbar .topbar-container .bal-container .mobile .dflex-ac-jc button:not(:last-child) {
+    margin: 0 0 8px 0;
+  }
+  .wrapper .topbar .topbar-container .bal-container.show {
+    right: 0px;
+  }
+  .wrapper .topbar .topbar-container .km-logo-wrapper .km-logo .new-logo {
+    top: -36px;
+    width: 160px;
+  }
+  @-webkit-keyframes logo {
+    0% {
+      top: -200px;
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      top: -32px;
+    }
+  }
+  @keyframes logo {
+    0% {
+      top: -200px;
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      top: -32px;
+    }
+  }
+  .wrapper .topbar .topbar-container .menu-toggle {
+    z-index: 5;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 20px;
+  }
+  .wrapper main.page-content section.toggle-section .page-header .bg {
+    width: 290px;
+  }
+  .wrapper main.page-content section.toggle-section .page-header .page-text {
+    font-size: 36px;
+    margin: 1rem 0 1rem 0;
+  }
+  .wrapper main.page-content section.board-list .container {
+    width: unset;
+  }
+  .wrapper main.page-content section.board-list .container .board-table table thead tr th {
+    white-space: nowrap;
+  }
+  .wrapper main.page-content section.board-list .container .board-table table thead tr th.writer-head {
+    display: none;
+  }
+  .wrapper main.page-content section.board-list .container .board-table table tbody tr td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .wrapper main.page-content section.board-list .container .board-table table tbody tr td.writer {
+    display: none;
+  }
+  .wrapper main.page-content section.board-list .container .board-table .board-content {
+    margin-bottom: 2rem;
+  }
+  .wrapper main.page-content section.board-list .container .board-table .board-content .header .back span {
+    display: none;
+  }
+  .wrapper main.page-content section.board-list .container .board-table .board-content .header .title {
+    font-size: 15px;
+    text-align: left;
+    max-width: 223px;
+    white-space: nowrap;
+    direction: ltr;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .wrapper main.page-content section.board-list .container .board-table .board-content .header .date {
+    position: absolute;
+    bottom: 3%;
+    right: 6%;
+  }
+  .wrapper main.page-content section.board-list .container .board-table .board-content .content {
+    font-size: 14px;
+  }
+  .wrapper main.page-content section.inquiry-list .container {
+    width: unset;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table table thead tr th {
+    white-space: nowrap;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table table thead tr th.writer-head {
+    display: none;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table table tbody tr td.writer {
+    display: none;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content {
+    margin-bottom: 2rem;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .back span {
+    display: none;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .title {
+    font-size: 15px;
+    text-align: left;
+    max-width: 223px;
+    white-space: nowrap;
+    direction: ltr;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .header .date {
+    position: absolute;
+    bottom: 3%;
+    right: 6%;
+  }
+  .wrapper main.page-content section.inquiry-list .container .inquiry-table .inquiry-content .content {
+    font-size: 14px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .wrapper main.page-content section.customerservice .container {
+    width: unset;
+  }
+  .wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .header .back {
+    display: flex;
+  }
+  .wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content {
+    width: 100%;
+  }
+  .wrapper main.page-content section.customerservice .container .customerservice-wrapper .customerservice-content .content .quick-money {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  }
+  .wrapper main.page-content section.transaction .container {
+    width: 90%;
+    padding: 0;
+  }
+  .wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .header .back {
+    display: flex;
+  }
+  .wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content {
+    width: 100%;
+  }
+  .wrapper main.page-content section.transaction .container .transaction-wrapper .transaction-content .content .quick-money {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  }
+  .wrapper main.page-content section.mypage {
+    margin-top: 2rem;
+  }
+  .wrapper main.page-content section.mypage .container {
+    width: unset;
+  }
+  .wrapper main.page-content section.mypage .container .mypage-wrapper .mypage-content .header {
+    display: flex;
+  }
+  .wrapper main.page-content section.history .container {
+    width: 100%;
+  }
+  .wrapper main.page-content section.changepass {
+    margin-top: 2rem;
+  }
+  .wrapper main.page-content section.changepass .container {
+    width: 90%;
+    padding: 0;
+  }
+  .wrapper main.page-content section.changepass .container .changepass-wrapper .changepass-content .header {
+    display: flex;
+  }
+  .wrapper main.page-content section.register {
+    margin-top: 2rem;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper {
+    position: relative;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .header .back {
+    display: none;
+    align-items: center;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .header .back a {
+    display: flex;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .header .back a svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 0.5rem;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .header .back a span {
+    color: #fff;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-group {
+    position: relative;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-group i {
+    position: absolute;
+    right: 10px;
+    bottom: 11px;
+    color: #6a3900;
+    font-size: 14px;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-container {
+    max-width: unset;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-container .form-group.w-btn .input-container {
+    width: 100%;
+  }
+  .wrapper main.page-content section.register .container .register-wrapper .register-content .content .form-container .form-group.w-btn .form-btn {
+    width: 96px;
+  }
+  .wrapper main.page-content section.login .container {
+    width: 90%;
+    padding: 0;
+  }
+  .wrapper main.page-content section.login .container .login-wrapper .login-content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrapper main.page-content section.login .container .login-wrapper .login-content .content .form-container {
+    max-width: unset;
+  }
+  .wrapper main.page-content section.my-tab ul.my-tab-list {
+    flex-wrap: wrap;
+  }
+  .wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a {
+    padding: 0.825rem;
+  }
+  .wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a .icon {
+    margin-right: 0.325rem;
+  }
+  .wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a .icon i {
+    font-size: 14px;
+  }
+  .wrapper main.page-content section.my-tab ul.my-tab-list li.my-tab-item a span {
+    font-size: 13px;
+  }
+  .wrapper main.page-content section.slotlist {
+    margin-top: 2rem;
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 2fr));
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box {
+    width: 100%;
+    padding: 4px;
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-thmb {
+    position: relative;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 7px;
+    margin: 0 0 0.425rem 0;
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title span.status {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin: 0 0.325rem 0 0;
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .game-title span.title {
+    font-size: 11px;
+    max-width: 95px;
+  }
+  .wrapper main.page-content section.slotlist .container .slotlist-wrapper .slotlist-content .content .gridlist .slotgame-box .game-container .game-info .play-btn button.btn-play {
+    font-size: 10px !important;
+    padding: 4px 10px !important;
+  }
+  .wrapper main.page-content.slotlist section.toggle-section .container .page-header .page-text {
+    margin: 7px 0 0 0;
+  }
+  .pagination-new {
+    margin: 1rem 0 1rem 0;
+  }
+  .footer-section {
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=style2.css.map */
